@@ -36,6 +36,17 @@ Start here:
 - `docs/03-ssh-hardening.md`
 - `docs/04-firewall.md`
 
+## Automation
+
+This repository includes automation helper scripts in `scripts/` to apply common hardening steps. Review scripts before running in production.
+
+- `scripts/add_user.sh` — add a user with password and optional sudo and SSH key.
+- `scripts/bootstrap.sh` — run a safe bootstrap that calls the other helper scripts.
+- `scripts/setup-unattended.sh` — install and enable unattended-upgrades.
+- `scripts/install-fail2ban.sh` — install and enable a basic Fail2ban configuration.
+
+See `docs/security-levels.md` for guidance on Level 1/2/3 hardening profiles.
+
 ## Repository Layout
 
 - `docs/` — step-by-step hardening guides
